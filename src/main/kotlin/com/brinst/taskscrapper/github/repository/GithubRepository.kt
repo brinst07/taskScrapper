@@ -1,4 +1,4 @@
-package com.brinst.taskscrapper.github
+package com.brinst.taskscrapper.github.repository
 
 import org.kohsuke.github.GHRepository
 import org.kohsuke.github.GitHub
@@ -6,7 +6,7 @@ import org.kohsuke.github.GitHubBuilder
 import org.springframework.stereotype.Repository
 
 @Repository
-class Repository {
+class GithubRepository {
     fun connectToGithub(token: String): GitHub {
         return GitHubBuilder().withOAuthToken(token).build()
     }
