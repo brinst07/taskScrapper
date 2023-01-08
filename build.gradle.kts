@@ -32,6 +32,7 @@ dependencies {
     implementation("org.kohsuke:github-api:1.313")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.mariadb.jdbc:mariadb-java-client:3.1.0")
+    implementation ("org.springframework.boot:spring-boot-starter-security")
 }
 
 tasks.withType<KotlinCompile> {
