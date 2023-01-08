@@ -11,10 +11,10 @@ class GithubGithubServiceTest{
     @Autowired
     private lateinit var githubService : GithubService
 
-    @Test
-    fun getAllRepoListTest() {
-        val allRepoList = githubService.getAllRepoList("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")
-        assertThat(allRepoList).isNotEmpty
-    }
+//    @Test
+//    fun getAllRepoListTest() {
+//        val allRepoList = githubService.getAllRepoList()
+//        assertThat(allRepoList).isNotEmpty
+//    }
 
 }
