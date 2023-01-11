@@ -17,9 +17,9 @@ class UserService (
         return userRepository.findAll().stream().map { member -> member.convertDTO() }.toList()
     }
 
-    fun getUserByName(name : String) : ResponseMemberDTO {
-        return userRepository.findByName(name).convertDTO()
-    }
+//    fun getUserByName(name : String) : ResponseMemberDTO {
+////        return userRepository.findByName(name).convertDTO()
+//    }
 
     fun joinUser(joinMemberDTO: JoinMemberDTO) : ResponseMemberDTO {
         return userRepository.save(joinMemberDTO.convertEntity()).convertDTO()
