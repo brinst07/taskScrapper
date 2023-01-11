@@ -1,4 +1,4 @@
-package com.brinst.taskscrapper.user.service
+package com.brinst.taskscrapper.security
 
 import com.brinst.taskscrapper.user.repository.UserRepository
 import org.springframework.security.core.userdetails.UserDetails
